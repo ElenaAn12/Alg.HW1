@@ -4,10 +4,10 @@ a = int(input('Первое число: '))
 b = int(input('Воторе число: '))
 c = int(input('Третье число: '))
 
-if a < b < c:
+if a < b < c or c < b < a:
     print(b)
-elif a < c < b:
-    print(c)
-else:
+elif a < b < c or c < b < a:
     print(a)
+else:
+    print(c)
     
